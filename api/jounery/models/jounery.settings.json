@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jouneries",
+  "info": {
+    "name": "journey"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "params": {
+      "type": "json"
+    },
+    "product": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "step": {
+      "type": "component",
+      "repeatable": true,
+      "component": "step.step"
+    },
+    "brandTheme": {
+      "model": "brand-themes"
+    },
+    "title": {
+      "type": "string"
+    },
+    "termsAndConditions": {
+      "collection": "terms-and-conditions"
+    }
+  }
+}

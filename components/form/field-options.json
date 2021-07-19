@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_form_field_options",
+  "info": {
+    "name": "field_options",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

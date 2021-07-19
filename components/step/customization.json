@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_step_customizations",
+  "info": {
+    "name": "customization",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "json"
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form.form-element"
+    }
+  }
+}

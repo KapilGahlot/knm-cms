@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "question"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "plaintext": {
+      "type": "text"
+    },
+    "formatted": {
+      "type": "richtext"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "questionnaires": {
+      "collection": "questionnaire",
+      "via": "questions"
+    },
+    "successors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "successor.successor"
+    },
+    "allowed_values": {
+      "collection": "allowed-value",
+      "via": "questions"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "textinput",
+        "textbox",
+        "dropdown",
+        "radio"
+      ]
+    }
+  }
+}

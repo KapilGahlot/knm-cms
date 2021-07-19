@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_form_validations",
+  "info": {
+    "name": "Validation",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "rules": {
+      "collection": "validations"
+    },
+    "customRules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form.field-validation"
+    }
+  }
+}

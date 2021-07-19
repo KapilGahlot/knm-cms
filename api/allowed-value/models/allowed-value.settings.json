@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "allowed_values",
+  "info": {
+    "name": "allowed value"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "values": {
+      "type": "json"
+    },
+    "questions": {
+      "via": "allowed_values",
+      "collection": "question",
+      "dominant": true
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_fields",
+  "info": {
+    "name": "form_field"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "subType": {
+      "type": "string"
+    },
+    "style": {
+      "type": "json"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

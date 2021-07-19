@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_form_field_validations",
+  "info": {
+    "name": "field_validation",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "min",
+        "max",
+        "minLength",
+        "maxLength",
+        "required",
+        "pattern",
+        "sameAs"
+      ],
+      "required": true
+    }
+  }
+}

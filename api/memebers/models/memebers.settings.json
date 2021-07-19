@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memebers",
+  "info": {
+    "name": "memebers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "exp": {
+      "type": "biginteger"
+    },
+    "pic": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "teams": {
+      "via": "memebers",
+      "collection": "teams"
+    }
+  }
+}

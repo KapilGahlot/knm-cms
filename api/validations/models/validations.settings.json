@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "validations",
+  "info": {
+    "name": "ValidationRules"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "min",
+        "max",
+        "minLength",
+        "maxLength",
+        "required",
+        "pattern",
+        "sameAs"
+      ],
+      "required": true
+    }
+  }
+}

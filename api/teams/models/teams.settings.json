@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "teams"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "memebers": {
+      "collection": "memebers",
+      "via": "teams",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_themes",
+  "info": {
+    "name": "brand_themes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "footer": {
+      "type": "string"
+    },
+    "style": {
+      "type": "json"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

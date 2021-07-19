@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_step_steps",
+  "info": {
+    "name": "step",
+    "icon": "list-ul"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "form": {
+      "model": "form"
+    },
+    "brandTheme": {
+      "model": "brand-themes"
+    },
+    "customization": {
+      "required": true,
+      "type": "component",
+      "repeatable": false,
+      "component": "step.customization"
+    }
+  }
+}

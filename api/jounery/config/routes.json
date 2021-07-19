@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/jouneries",
+      "handler": "jounery.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jouneries/count",
+      "handler": "jounery.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jouneries/:id",
+      "handler": "jounery.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jouneries",
+      "handler": "jounery.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/jouneries/:id",
+      "handler": "jounery.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/jouneries/:id",
+      "handler": "jounery.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

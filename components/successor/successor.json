@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_successor_successors",
+  "info": {
+    "name": "successor",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "questions": {
+      "collection": "question"
+    },
+    "conditional_values": {
+      "type": "json"
+    }
+  }
+}

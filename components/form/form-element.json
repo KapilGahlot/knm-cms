@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_form_element_form_elements",
+  "info": {
+    "name": "form_element",
+    "icon": "th-list"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "style": {
+      "type": "json"
+    },
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "text"
+    },
+    "visibility": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "fieldOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form.field-options"
+    },
+    "formField": {
+      "model": "form-field"
+    },
+    "defaultValue": {
+      "type": "string"
+    },
+    "validation": {
+      "required": true,
+      "type": "component",
+      "repeatable": false,
+      "component": "form.validation"
+    }
+  }
+}
